@@ -1,0 +1,17 @@
+streamlit
+→ Web interface and visualization dashboard
+
+torch
+→ Required for both CodeT5 and the Tiny Transformer
+
+transformers
+→ HuggingFace library for CodeT5-small
+
+numpy
+→ Numerical operations, preprocessing, metrics
+
+scikit-learn
+→ Utility functions and metric support
+
+tqdm
+→ Training progress bars (especially for Tiny Transformer)
