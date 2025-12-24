@@ -1,0 +1,35 @@
+Example 3: Output from Streamlit Application
+============================================
+
+Model Used:
+CodeT5 Base (Pre-trained)
+
+Generated Summary / Docstring:
+------------------------------
+Broken_function(x,y)Broken_function(x,y)Broken_function(x,y)
+Broken_function(x,y)Broken_function(x,y)Broken_function(x,y)
+Broken_function(x,y)Broken_function(x,y)Broken_function(x)
+
+Observation:
+The generated output consists of repeated tokens and does not form a
+meaningful natural language description. This behavior indicates that
+the base CodeT5 model was not fine-tuned for the task and was evaluated
+on a very small mock dataset.
+
+Error & Warning Detection:
+--------------------------
+❌ Syntax Error Detected
+- Line 19: expected ':'
+
+Fix Suggestions:
+----------------
+Check for missing colons (:), unmatched parentheses, or indentation errors.
+
+Interpretation:
+---------------
+This example demonstrates the limitations of using a base pre-trained
+model without task-specific fine-tuning. While the model attempts to
+generate output, it fails to produce coherent comments. However, the
+system successfully detects syntax errors and provides actionable
+debugging guidance, highlighting the importance of combining model
+outputs with rule-based validation.
